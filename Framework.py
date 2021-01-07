@@ -87,5 +87,5 @@ class Rul_Framework():
   def mae_on_test(self):
     return tf.keras.losses.mean_absolute_error(self.ts_set['rul'], self.model.predict(self.ts_set))
 
-  def mae_on_set(input_set):
+  def mae_on_set(self,input_set):
     return tf.keras.losses.mean_absolute_error(input_set['rul'], self.model.predict(input_set))
